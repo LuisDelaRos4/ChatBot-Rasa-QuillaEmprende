@@ -1,0 +1,18 @@
+# Archivos de caché de Python
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# Entorno virtual
+venv/
+.env
+
+# Modelos entrenados
+models/
+
+# Archivos de logs
+*.log
+
+# Archivos de configuración local
+.env.development
