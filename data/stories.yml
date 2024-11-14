@@ -1,0 +1,46 @@
+version: "3.1"
+
+stories:
+  - story: Saludar y preguntar por servicios
+    steps:
+      - intent: saludar
+      - action: utter_saludar
+      - intent: preguntar_servicios
+      - action: utter_servicios
+
+  - story: Saludar y preguntar por requisitos
+    steps:
+      - intent: saludar
+      - action: utter_saludar
+      - intent: preguntar_requisitos
+      - action: utter_requisitos
+
+  - story: Preguntar servicios y despedirse
+    steps:
+      - intent: preguntar_servicios
+      - action: utter_servicios
+      - intent: despedirse
+      - action: utter_despedirse
+
+  - story: Preguntar requisitos y despedirse
+    steps:
+      - intent: preguntar_requisitos
+      - action: utter_requisitos
+      - intent: despedirse
+      - action: utter_despedirse
+
+  - story: Saludo, pregunta y no entender
+    steps:
+      - intent: saludar
+      - action: utter_saludar
+      - intent: preguntar_servicios
+      - action: utter_servicios
+      - intent: ofrecer_feedback_negativo
+      - action: utter_no_entender
+
+  - story: Saludo y despedida
+    steps:
+      - intent: saludar
+      - action: utter_saludar
+      - intent: despedirse
+      - action: utter_despedirse

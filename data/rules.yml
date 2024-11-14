@@ -1,0 +1,27 @@
+version: "3.1"
+
+rules:
+  - rule: Saludar al usuario
+    steps:
+      - intent: saludar
+      - action: utter_saludar
+
+  - rule: Despedirse del usuario
+    steps:
+      - intent: despedirse
+      - action: utter_despedirse
+
+  - rule: Informar sobre servicios
+    steps:
+      - intent: preguntar_servicios
+      - action: utter_servicios
+
+  - rule: Informar sobre requisitos
+    steps:
+      - intent: preguntar_requisitos
+      - action: utter_requisitos
+
+  - rule: Manejar incomprensión del usuario
+    steps:
+      - intent: ofrecer_feedback_negativo
+      - action: utter_no_entender

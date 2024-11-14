@@ -1,0 +1,48 @@
+version: "3.1"
+
+nlu:
+  - intent: saludar
+    examples: |
+      - Hola
+      - Buenos días
+      - Buenas tardes
+      - Hey
+      - Saludos
+      - Hola, necesito información
+      - ¡Qué tal!
+
+  - intent: despedirse
+    examples: |
+      - Adiós
+      - Hasta luego
+      - Chao
+      - Gracias por la ayuda
+      - Nos vemos
+      - Hasta pronto
+      - Bye
+
+  - intent: preguntar_servicios
+    examples: |
+      - ¿Qué servicios ofrecen?
+      - ¿Cómo pueden ayudarme con mi emprendimiento?
+      - Quiero empezar un negocio
+      - Necesito asesoría para mi empresa
+      - ¿Qué apoyo brindan a emprendedores?
+      - ¿Tienen talleres?
+
+  - intent: preguntar_requisitos
+    examples: |
+      - ¿Qué necesito para empezar?
+      - ¿Cuáles son los requisitos?
+      - ¿Cómo me puedo registrar?
+      - ¿Qué documentos necesito?
+      - Requisitos para participar
+      - ¿Qué se requiere?
+
+  - intent: ofrecer_feedback_negativo
+    examples: |
+      - No entendí
+      - No queda claro
+      - Blah blah
+      - ¿Qué dices?
+      - No entiendo de qué hablas

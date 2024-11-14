@@ -1,0 +1,31 @@
+version: "3.1"
+
+intents:
+  - saludar
+  - despedirse
+  - preguntar_servicios
+  - preguntar_requisitos
+  - ofrecer_feedback_negativo
+
+responses:
+  utter_saludar:
+    - text: "¡Hola! Soy el asistente virtual de Quilla Emprende. ¿En qué puedo ayudarte?"
+    - text: "¡Bienvenido a Quilla Emprende! Estoy aquí para ayudarte con tu emprendimiento."
+
+  utter_despedirse:
+    - text: "¡Gracias por contactarnos! Estamos para servirte."
+    - text: "¡Éxitos en tu emprendimiento! No dudes en volver si necesitas más información."
+
+  utter_servicios:
+    - text: "En Quilla Emprende ofrecemos:\n- Asesoría empresarial\n- Capacitaciones\n- Networking\n- Apoyo en formulación de proyectos\n- Conexión con inversores"
+
+  utter_requisitos:
+    - text: "Para acceder a nuestros servicios necesitas:\n1. Ser mayor de edad\n2. Tener una idea de negocio o emprendimiento existente\n3. Estar ubicado en Barranquilla o área metropolitana\n\nPuedes registrarte en nuestra plataforma web para comenzar."
+
+  utter_no_entender:
+    - text: "Lo siento, no entiendo. ¿Podrías reformular tu pregunta?"
+    - text: "No estoy seguro de lo que quieres decir. ¿Puedes aclararlo?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
